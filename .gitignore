@@ -30,9 +30,18 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# local env files
+# local env files (.env.example hariç hepsi)
 .env
-.env*.local
+.env.*
+!.env.example
+
+# secrets / credentials
+*.keystore
+credentials.json
+google-services.json
+GoogleService-Info.plist
+*service-account*.json
+.claude/settings.local.json
 
 # typescript
 *.tsbuildinfo
@@ -45,3 +54,4 @@ example
 
 # supabase cli
 supabase/.temp/
+supabase/.branches/
