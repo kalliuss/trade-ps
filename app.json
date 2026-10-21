@@ -26,11 +26,21 @@
     "plugins": [
       "expo-router",
       [
+        "expo-image-picker",
+        {
+          "photosPermission": "Profil ve ilan fotoğrafı seçebilmek için galerine erişim gerekiyor.",
+          "cameraPermission": "Disk fotoğrafı çekebilmek için kameraya erişim gerekiyor."
+        }
+      ],
+      [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "#f2f2ec",
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
+          "imageWidth": 76,
+          "dark": {
+            "backgroundColor": "#060606"
+          }
         }
       ]
     ],
